@@ -3,35 +3,31 @@ NAME : ANMOL KHEMUKA
 ENROLLMENT NO. : 18114007
 BATCH : O1 CSE
 
-
-
-
-
 mov cnt 0
 mov i 1
 .loop:
-mov j i
-mov k i
-.loop1:
-.loop2:
-mul r1 j j
-mul r2 r1 j
-mul r3 k k
-mul r4 r3 k
-mov r5 0
-add r5 r2 r4
-cmp r5 i
-beq .countIncrease
-sub k k 1
-cmp k 0
-bgt .loop2
-sub j j 0
-bgt .loop1
-cmp cnt 2
-bgt .exit
-add i i 1
-.cntIncrease:
-add cnt cnt 1
-.exit:
-Exit
-mov cnt 0
+          mov j i
+          mov k i
+          .loop1:
+                  .loop2:
+                          mul r1 j j
+                          mul r2 r1 j
+                          mul r3 k k
+                          mul r4 r3 k
+                          mov r5 0
+                          add r5 r2 r4
+                          cmp r5 i
+                          beq .countIncrease
+                          sub k k 1
+                          cmp k 0
+                          bgt .loop2
+                      sub j j 0
+                      bgt .loop1
+          cmp cnt 2
+          bgt .exit
+          add i i 1
+          .cntIncrease:
+                   add cnt cnt 1
+           .exit:
+                 Exit
+            mov cnt 0
